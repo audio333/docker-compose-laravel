@@ -71,6 +71,7 @@ services:
     image: node:current-alpine
     volumes:
       - ./src:/var/www/html
+    user: node
     ports:
       - "3000:3000"
       - "3001:3001"
